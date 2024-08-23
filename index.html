@@ -1,33 +1,150 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/55e5063d5b.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind and daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Customize color and font -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                "manrope":["Manrope",'Helvetica', 'Arial', 'sans-serif'],
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    <h1 class="font-manrope">hello world</h1>
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              header2: "#212121",
+              header3: "#494949",
+              header4: "#1C1C1C",
+              green_bg: "#ABEF5F",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "Helvetica", "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="bg-[#f4f4f4]">
+      <!-- nav bar start -->
+      <div class="container mx-auto pt-5">
+        <div class="navbar">
+          <div class="navbar-start">
+            <!-- dropdown start -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <!-- Rinterio start -->
+            <div class="space-x-2 flex justify-center items-center">
+              <div
+                class="rounded-full flex justify-center items-center size-10 bg-green_bg"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
+              </div>
+              <div class="mb-2">
+                <a class="text-header2 text-3xl font-extrabold">Rinterio</a>
+              </div>
+            </div>
+          </div>
+          <!-- nav items start -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-neutral-500">
+                <a class="hover:text-header3 hover:font-extrabold">Home</a>
+              </li>
+              <li class="text-neutral-500">
+                <a class="hover:text-header3 hover:font-extrabold">Services</a>
+              </li>
+              <li class="text-neutral-500">
+                <a class="hover:text-header3 hover:font-extrabold">Portfolio</a>
+              </li>
+              <li class="text-neutral-500">
+                <a class="hover:text-header3 hover:font-extrabold">Blogs</a>
+              </li>
+              <li class="text-neutral-500">
+                <a class="hover:text-header3 hover:font-extrabold">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- button start -->
+          <div class="navbar-end space-x-4">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              
+            </div>
+            <div class="rounded-full flex justify-center items-center size-7 border-2 border-gray-100 bg-white">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+            <a href="" class="btn rounded-3xl bg-green_bg">
+              <div class="flex justify-center items-center gap-2">
+                <div>
+                  <p class="text-xl font-extrabold text-header4 mb-1">Book Consult<p/>
+                </div>
+                <div
+                  class="rounded-full flex justify-center items-center size-7 bg-black"
+                >
+                  <i class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i>
+                </div>
+              </div> 
+            </a>
+                       
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
