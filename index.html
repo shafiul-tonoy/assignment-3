@@ -45,13 +45,27 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="bg-[#f4f4f4]">
+    <header class="bg-gradient-to-b from-[#f5f5f5] to-white">
       <!-- nav bar start -->
       <div class="container mx-auto pt-5">
         <div class="navbar">
-          <div class="navbar-start">
-            <!-- dropdown start -->
-            <div class="dropdown">
+          <div class="navbar-start w-[95%] lg:w-1/3 justify-between">
+           
+            <!-- Rinterio start -->
+            <div
+              class="space-x-2 flex justify-center items-center"
+            >
+              <div
+                class="rounded-full flex justify-center items-center size-10 bg-green_bg"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
+              </div>
+              <div class="mb-2">
+                <a class="text-header2 text-3xl font-extrabold">Rinterio</a>
+              </div>
+            </div>
+             <!-- dropdown start -->
+             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,29 +86,31 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
+                <li class="text-neutral-500">
+                  <a class="hover:text-header3 hover:font-extrabold">Home</a>
                 </li>
-                <li><a>Item 3</a></li>
+                <li class="text-neutral-500">
+                  <a class="hover:text-header3 hover:font-extrabold"
+                    >Services</a
+                  >
+                </li>
+                <li class="text-neutral-500">
+                  <a class="hover:text-header3 hover:font-extrabold"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="text-neutral-500">
+                  <a class="hover:text-header3 hover:font-extrabold">Blogs</a>
+                </li>
+                <li class="text-neutral-500">
+                  <a class="hover:text-header3 hover:font-extrabold"
+                    >Contact Us</a
+                  >
+                </li>
               </ul>
             </div>
-            <!-- Rinterio start -->
-            <div class="space-x-2 flex justify-center items-center">
-              <div
-                class="rounded-full flex justify-center items-center size-10 bg-green_bg"
-              >
-                <i class="fa-solid fa-arrow-right -rotate-45 text-2xl"></i>
-              </div>
-              <div class="mb-2">
-                <a class="text-header2 text-3xl font-extrabold">Rinterio</a>
-              </div>
-            </div>
           </div>
+
           <!-- nav items start -->
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -111,38 +127,62 @@
                 <a class="hover:text-header3 hover:font-extrabold">Blogs</a>
               </li>
               <li class="text-neutral-500">
-                <a class="hover:text-header3 hover:font-extrabold">Contact Us</a>
+                <a class="hover:text-header3 hover:font-extrabold"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
           <!-- button start -->
-          <div class="navbar-end space-x-4">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-              
-            </div>
-            <div class="rounded-full flex justify-center items-center size-7 border-2 border-gray-100 bg-white">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            
-            <a href="" class="btn rounded-3xl bg-green_bg">
-              <div class="flex justify-center items-center gap-2">
-                <div>
-                  <p class="text-xl font-extrabold text-header4 mb-1">Book Consult<p/>
-                </div>
-                <div
-                  class="rounded-full flex justify-center items-center size-7 bg-black"
+          <div class="navbar-end space-x-4 hidden lg:flex">
+            <div class="lg:flex gap-2 justify-center items-center">
+              <div
+                class="rounded-full flex justify-center items-center p-3 size-12 border-2 border-gray-100 bg-white"
+              >
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+              </div>
+              <div
+                class="rounded-full flex justify-center items-center p-3 border-2 border-gray-100 bg-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
                 >
-                  <i class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </div>
+              <a href="" class="btn rounded-3xl bg-green_bg">
+                <div class="flex justify-center items-center gap-2">
+                  <div>
+                    <p class="text-xl font-extrabold text-header4 mb-1">
+                      Book Consult
+                    </p>
+                    <p />
+                  </div>
+                  <div
+                    class="rounded-full flex justify-center items-center size-7 bg-black"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"
+                    ></i>
+                  </div>
                 </div>
-              </div> 
-            </a>
-                       
+              </a>
+            </div>
           </div>
         </div>
       </div>
+      <!-- hero section start -->
+       
+      <!-- hero section end -->
     </header>
     <main></main>
     <footer></footer>
