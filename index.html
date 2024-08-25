@@ -35,6 +35,10 @@
               header4: "#1C1C1C",
               green_bg: "#ABEF5F",
               gray1_bg: "#f4f4f4",
+              pink1: "#E7C1D3",
+              yellow1: "#EFDA6E",
+              green1: "#A4DAC3",
+              blue1: "#77AAEA",
             },
             fontFamily: {
               manrope: ["Manrope", "Helvetica", "Arial", "sans-serif"],
@@ -226,16 +230,20 @@
       <!-- hero section end -->
     </header>
     <main>
-      <!-- design section start -->      
-      <!-- flex layout -->
-      <section class="bg-gray1_bg pb-28">        
-        <div class="flex  flex-col  items-center  lg:flex-row lg:justify-between gap-7 container mx-auto pt-16 relative">
-          <div class=" hidden lg:flex absolute top-10 -left-14">
-            <img src="./assets/Vector.png" alt="vector">
+      <!-- design section start -->
+      <section class="bg-gray1_bg pb-28">
+        <!-- flex layout -->
+        <div
+          class="flex flex-col items-center lg:flex-row lg:justify-between gap-7 container mx-auto pt-16 relative"
+        >
+          <div class="hidden lg:flex absolute top-10 -left-14">
+            <img src="./assets/Vector.png" alt="vector" />
           </div>
           <div class="space-y-5 lg:w-3/6">
             <div class="text-center lg:text-left">
-              <button class="btn  text-header3 font-bold bg-white rounded-3xl px-5">
+              <button
+                class="btn text-header3 font-bold bg-white rounded-3xl px-5"
+              >
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -255,40 +263,47 @@
                 <span>About us</span>
               </button>
             </div>
-            
-            <h1 class="text-4xl font-bold text-header2 text-center lg:text-left">
+
+            <h1
+              class="text-4xl font-bold text-header2 text-center lg:text-left"
+            >
               We design thoughtful, <br />
               liveable spaces
             </h1>
             <p class="font-medium text-header3 text-center lg:text-left">
-              Crafting environments that blend beauty, functionality, and comfort for a life well-lived.Each space we create  is a reflection of your unique style, tailored to inspire and elevate everyday living.
+              Crafting environments that blend beauty, functionality, and
+              comfort for a life well-lived.Each space we create is a reflection
+              of your unique style, tailored to inspire and elevate everyday
+              living.
             </p>
             <!-- card1 start -->
             <div class="card card-side bg-base-100 shadow-xl pl-6">
               <figure>
-                <img
-                  src="./assets/commercial.png"
-                  alt="commercial" />
+                <img src="./assets/commercial.png" alt="commercial" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title text-header2 font-extrabold text-xl">Commercial</h2>
+                <h2 class="card-title text-header2 font-extrabold text-xl">
+                  Commercial
+                </h2>
                 <p class="text-neutral-500 font-medium">
-                  We design spaces that combine modern aesthetics with practical amenities.
-                </p>                
+                  We design spaces that combine modern aesthetics with practical
+                  amenities.
+                </p>
               </div>
             </div>
             <!-- card2 start -->
-            <div class="card card-side bg-base-100 shadow-xl pl-6 ">
+            <div class="card card-side bg-base-100 shadow-xl pl-6">
               <figure>
-                <img
-                  src="./assets/residential.png"
-                  alt="Residential" />
+                <img src="./assets/residential.png" alt="Residential" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title text-header2 font-extrabold text-xl">Residential</h2>
+                <h2 class="card-title text-header2 font-extrabold text-xl">
+                  Residential
+                </h2>
                 <p class="text-neutral-500 font-medium">
-                  Creating residential apartments  we focus on comfort  and functionality.
-                </p>                
+                  Creating residential apartments we focus on comfort and
+                  functionality.
+                </p>
               </div>
             </div>
           </div>
@@ -298,6 +313,100 @@
         </div>
       </section>
       <!-- design section end -->
+      <!-- works section start -->
+      <section class="bg-gray1_bg pb-28">
+        <div class="container mx-auto">
+          <!-- heading -->
+          <div class="text-center lg:w-3/6 mx-auto space-y-4">
+            <!-- button -->
+            <div class="text-center">
+              <button
+                class="btn text-header3 font-bold bg-white rounded-3xl px-5"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </span>
+                <span>How We Works</span>
+              </button>
+            </div>
+            <h1 class="text-4xl font-bold header2">Our Works Process</h1>
+            <p class="font-medium">
+              Our work plan involves a comprehensive approach: developing
+              innovative concepts, meticulous planning, and design with the
+              vision and client expectations.
+            </p>
+          </div>
+          <!-- cards -->
+           <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10">
+            <!-- card-1 -->
+            <div class="card bg-pink1">
+              <div class="pt-7 pl-6 flex justify-start pb-0 mb-0">
+                <img
+                  src="./assets/concept.png"
+                  alt="concept"                   
+                  />
+              </div>
+              <div class="card-body ">
+                <h2 class="card-title font-extrabold text-xl text-header4">Concept</h2>
+                <p class="font-medium text-header3">Innovative ideas shaping unique spaces tailored to client needs and aspirations.</p>                
+              </div>
+            </div> 
+            <!-- card-2 -->
+            <div class="card bg-yellow1">
+              <div class="pt-7 pl-6 flex justify-start pb-0 mb-0">
+                <img
+                  src="./assets/flow-chart.png"
+                  alt="concept"                   
+                  />
+              </div>
+              <div class="card-body ">
+                <h2 class="card-title font-extrabold text-xl text-header4">Design Process</h2>
+                <p class="font-medium text-header3">Collaborative and detailed, translating concepts into functional, beautiful spaces.</p>                
+              </div>
+            </div> 
+            <!-- card-3 -->
+            <div class="card bg-green1">
+              <div class="pt-7 pl-6 flex justify-start pb-0 mb-0">
+                <img
+                  src="./assets/vision.png"
+                  alt="concept"                   
+                  />
+              </div>
+              <div class="card-body ">
+                <h2 class="card-title font-extrabold text-xl text-header4">Supervision</h2>
+                <p class="font-medium text-header3">Ensuring quality and precision, overseeing every detail from start to finish.</p>                
+              </div>
+            </div> 
+            <!-- card-4 -->
+            <div class="card bg-blue1">
+              <div class="pt-7 pl-6 flex justify-start pb-0 mb-0">
+                <img
+                  src="./assets/budget-planning.png"
+                  alt="concept"                   
+                  />
+              </div>
+              <div class="card-body ">
+                <h2 class="card-title font-extrabold text-xl text-header4">Budget Planning</h2>
+                <p class="font-medium text-header3">Strategic allocation of resources to maximize value while maintaining project goals.</p>                
+              </div>
+            </div> 
+           </div>
+        </div>
+      </section>
+      <!-- works section end -->
     </main>
     <footer></footer>
   </body>
