@@ -43,7 +43,6 @@
             fontFamily: {
               manrope: ["Manrope", "Helvetica", "Arial", "sans-serif"],
             },
-            
           },
         },
       };
@@ -818,9 +817,9 @@
       <!-- review section end -->
       <!-- discuss section start -->
       <section class="mt-2 bg-[url('./assets/bg.jpg')]">
-        <div class="container mx-auto py-20 w-2/4">
+        <div class="container mx-auto py-20 lg:w-2/4">
           <!-- heading -->
-          <div class="text-center  mx-auto space-y-4">
+          <div class="text-center mx-auto space-y-4">
             <!-- button -->
             <div class="text-center">
               <button
@@ -845,22 +844,88 @@
                 <span>Let’s Connect</span>
               </button>
             </div>
-            <h1 class="text-4xl font-bold header2">Let’s Discuss Next Project</h1>
+            <h1 class="text-4xl font-bold header2">
+              Let’s Discuss Next Project
+            </h1>
             <p class="font-medium">
-              We’ll craft innovative solutions tailored to your needs, ensuring every detail is thoughtfully designed and executed.
+              We’ll craft innovative solutions tailored to your needs, ensuring
+              every detail is thoughtfully designed and executed.
             </p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
-              <input type="text" placeholder="First Name*" class="input w-full  rounded-3xl p-6" />
-              <input type="text" placeholder="Last Name*" class="input w-full  rounded-3xl p-6" />
-              <input type="number" placeholder="Phone Number*" class="input w-full rounded-3xl p-6" />
-              <input type="email" placeholder="Email*" class="input w-full rounded-3xl p-6" />
-              <textarea class="textarea col-span-2 rounded-3xl h-40" placeholder="Write your message here"></textarea>
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input w-full rounded-3xl p-6"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input w-full rounded-3xl p-6"
+              />
+              <input
+                type="number"
+                placeholder="Phone Number*"
+                class="input w-full rounded-3xl p-6"
+              />
+              <input
+                type="email"
+                placeholder="Email*"
+                class="input w-full rounded-3xl p-6"
+              />
+              <textarea
+                class="textarea lg:col-span-2 rounded-3xl h-40"
+                placeholder="Write your message here"
+              ></textarea>
+            </div>
+            <div>
+              <a
+                href=""
+                class="btn rounded-3xl bg-green_bg w-full"
+              >
+                <div class="flex justify-center items-center gap-2">
+                  <div>
+                    <p class="text-xl font-extrabold text-header4 mb-1">
+                      Send Mail
+                    </p>
+                    <p />
+                  </div>
+                  <div
+                    class="rounded-full flex justify-center items-center size-7 bg-green_bg"
+                  >
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <!-- discuss section send -->
     </main>
-    <footer></footer>
+    <!-- footer start -->
+    <footer class="bg-header4 py-12">
+      <div class="container mx-auto">
+        <!-- head start -->
+        <div class="space-x-2 flex justify-center items-center">
+          <div
+            class="rounded-full flex justify-center items-center size-8 bg-green_bg"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i>
+          </div>
+          <div class="mb-2">
+            <a class="text-white text-2xl font-extrabold">Rinterio</a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <p class="font-medium text-neutral-500 lg:w-1/2 ">
+            As a leading architecture firm, we are dedicated to creating spaces that inspire and endure. Our expertise spans across residential, commercial, and environmental projects, where innovation meets functionality.
+          </p>
+        </div>
+        <!-- head end -->
+         <!-- flex start -->
+          
+         <!-- flex end -->
+      </div>
+    </footer>
   </body>
 </html>
