@@ -450,9 +450,9 @@
             </p>
           </div>
           <!-- grid -->                    
-          <div class="grid grid-cols-12 gap-3 pt-10 ">   
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 pt-10 ">   
             <!-- col span 8 -->         
-            <div class="flex col-span-8 rounded-2xl p-5 border-gray-100 border-2 gap-5">              
+            <div class="lg:flex lg:col-span-8 rounded-2xl p-5 border-gray-100 border-2 gap-5">              
               <div>
                 <img src="./assets/img1.png" alt="house">
               </div>
@@ -476,15 +476,15 @@
               </div>
             </div>  
             <!-- col span 4  -->
-            <div class="col-span-4 rounded-2xl p-5 border-gray-100 border-2 flex justify-center">
+            <div class="lg:col-span-4 rounded-2xl p-5 border-gray-100 border-2 lg:flex justify-center">
               <img src="./assets/img2.png" alt="house">
             </div>
             <!-- col span 3 -->
-            <div class="col-span-3 rounded-2xl p-5 border-gray-100 border-2 flex justify-center">
-              <img src="./assets/img3.png" alt="house">
-            </div>
+            <div class="lg:col-span-3 rounded-2xl p-5 border-gray-100 border-2 lg:flex justify-center lg:order-last">
+              <img src="./assets/img5.png" alt="house">
+            </div>             
             <!-- col span-6 -->
-            <div class="flex col-span-6 rounded-2xl p-5 border-gray-100 border-2 gap-5 items-center">              
+            <div class="lg:flex lg:felx-row  lg:col-span-6 rounded-2xl p-5 border-gray-100 border-2 gap-5 items-center lg:order-4">              
               <div class="w-full">
                 <img src="./assets/img4.png" alt="house" class="">
               </div>
@@ -508,9 +508,13 @@
               </div>
             </div> 
             <!-- col 3 -->
-            <div class="col-span-3 rounded-2xl p-5 border-gray-100 border-2 flex justify-center">
+            <div class="lg:col-span-3 rounded-2xl p-5 border-gray-100 border-2 lg:flex justify-center lg:order-1">
+              <img src="./assets/img3.png" alt="house">
+            </div>   
+            <!-- lg hide -->
+            <div class="lg:col-span-3 rounded-2xl p-5 border-gray-100 border-2 lg:hidden">
               <img src="./assets/img5.png" alt="house">
-            </div>          
+            </div>  
           </div> 
         </div>
       </section>
