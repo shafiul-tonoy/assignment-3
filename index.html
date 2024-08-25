@@ -34,6 +34,7 @@
               header3: "#494949",
               header4: "#1C1C1C",
               green_bg: "#ABEF5F",
+              gray1_bg: "#f4f4f4",
             },
             fontFamily: {
               manrope: ["Manrope", "Helvetica", "Arial", "sans-serif"],
@@ -50,11 +51,8 @@
       <div class="container mx-auto pt-5">
         <div class="navbar">
           <div class="navbar-start w-[95%] lg:w-1/3 justify-between">
-           
             <!-- Rinterio start -->
-            <div
-              class="space-x-2 flex justify-center items-center"
-            >
+            <div class="space-x-2 flex justify-center items-center">
               <div
                 class="rounded-full flex justify-center items-center size-10 bg-green_bg"
               >
@@ -64,8 +62,8 @@
                 <a class="text-header2 text-3xl font-extrabold">Rinterio</a>
               </div>
             </div>
-             <!-- dropdown start -->
-             <div class="dropdown">
+            <!-- dropdown start -->
+            <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,22 +182,29 @@
       <div class="container mx-auto pt-6">
         <!-- banner start-->
         <div class="flex justify-center">
-          <img src="./assets/banner.png" alt="banner" >
+          <img src="./assets/banner.png" alt="banner" />
         </div>
         <!-- banner end -->
         <div class="hero">
-          <div class="hero-content text-center ">            
-            <div class="pt-3 space-y-2 ">
+          <div class="hero-content text-center">
+            <div class="pt-3 space-y-2">
               <h1 class="text-6xl font-extrabold text-header2">
-                A barn house of this design has a <br> striking appearance
+                A barn house of this design has a <br />
+                striking appearance
               </h1>
               <p class="py-6 text0header3 px-10">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> 
-                accents, and large windows that flood the space with natural light.
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                <br />
+                accents, and large windows that flood the space with natural
+                light.
               </p>
               <!-- <button class="btn btn-primary">Get Started</button> -->
               <!-- view details start -->
-              <a href="" class="btn rounded-3xl bg-green_bg/50 w-full lg:w-auto">
+              <a
+                href=""
+                class="btn rounded-3xl bg-green_bg/50 w-full lg:w-auto"
+              >
                 <div class="flex justify-center items-center gap-2">
                   <div>
                     <p class="text-xl font-extrabold text-header4 mb-1">
@@ -210,19 +215,90 @@
                   <div
                     class="rounded-full flex justify-center items-center size-7 bg-green_bg"
                   >
-                    <i
-                      class="fa-solid fa-arrow-right -rotate-45 text-xl"
-                    ></i>
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
                   </div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       <!-- hero section end -->
     </header>
-    <main></main>
+    <main>
+      <!-- design section start -->      
+      <!-- flex layout -->
+      <section class="bg-gray1_bg pb-28">        
+        <div class="flex  flex-col  items-center  lg:flex-row lg:justify-between gap-7 container mx-auto pt-16 relative">
+          <div class=" hidden lg:flex absolute top-10 -left-14">
+            <img src="./assets/Vector.png" alt="vector">
+          </div>
+          <div class="space-y-5 lg:w-3/6">
+            <div class="text-center lg:text-left">
+              <button class="btn  text-header3 font-bold bg-white rounded-3xl px-5">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </span>
+                <span>About us</span>
+              </button>
+            </div>
+            
+            <h1 class="text-4xl font-bold text-header2 text-center lg:text-left">
+              We design thoughtful, <br />
+              liveable spaces
+            </h1>
+            <p class="font-medium text-header3 text-center lg:text-left">
+              Crafting environments that blend beauty, functionality, and comfort for a life well-lived.Each space we create  is a reflection of your unique style, tailored to inspire and elevate everyday living.
+            </p>
+            <!-- card1 start -->
+            <div class="card card-side bg-base-100 shadow-xl pl-6">
+              <figure>
+                <img
+                  src="./assets/commercial.png"
+                  alt="commercial" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-header2 font-extrabold text-xl">Commercial</h2>
+                <p class="text-neutral-500 font-medium">
+                  We design spaces that combine modern aesthetics with practical amenities.
+                </p>                
+              </div>
+            </div>
+            <!-- card2 start -->
+            <div class="card card-side bg-base-100 shadow-xl pl-6 ">
+              <figure>
+                <img
+                  src="./assets/residential.png"
+                  alt="Residential" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-header2 font-extrabold text-xl">Residential</h2>
+                <p class="text-neutral-500 font-medium">
+                  Creating residential apartments  we focus on comfort  and functionality.
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/Rectangle.png" alt="house-3" />
+          </div>
+        </div>
+      </section>
+      <!-- design section end -->
+    </main>
     <footer></footer>
   </body>
 </html>
